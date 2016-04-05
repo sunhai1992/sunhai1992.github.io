@@ -60,11 +60,6 @@
 						</div>
 						
 						
-						<div class="icon-wrap icon-me hide" data-idx="3">
-							<div class="user"></div>
-							<div class="shoulder"></div>
-						</div>
-						
 					</div>
 					
 				</div>
@@ -76,8 +71,6 @@
 						
 						<li>友情链接</li>
 						
-						
-						<li>關於</li>
 						
 					</ul>
 				</div>
@@ -100,6 +93,8 @@
 				        
 							<li><a href="/tags/Android">Android</a></li>
 				        
+							<li><a href="/tags/test">测试</a></li>
+				        
 						</ul>
 					</nav>
 					<nav class="header-nav">
@@ -120,7 +115,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/日志/" style="font-size: 10px;">日志</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+						<a href="/tags/test/" style="font-size: 10px;">test</a> <a href="/tags/日志/" style="font-size: 10px;">日志</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
 					</div>
 				</section>
 				
@@ -135,12 +130,6 @@
 				</section>
 				
 
-				
-				
-				<section class="switch-part switch-part4">
-				
-					<div id="js-aboutme">切勿想得太多，做得太少</div>
-				</section>
 				
 			</div>
 		</div>
@@ -178,6 +167,8 @@
 		        
 					<li><a href="/tags/Android">Android</a></li>
 		        
+					<li><a href="/tags/test">测试</a></li>
+		        
 		        <div class="clearfix"></div>
 				</ul>
 			</nav>
@@ -199,6 +190,114 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-App-testCase" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/05/App-testCase/" class="article-date">
+  	<time datetime="2016-04-05T07:35:26.000Z" itemprop="datePublished">2016-04-05</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/05/App-testCase/">App_testCase</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="u79FB_u52A8_u7AEF_u5B89_u88C5_u5305_28APP_29_u7684_u6D4B_u8BD5_u7528_u4F8B"><a href="#u79FB_u52A8_u7AEF_u5B89_u88C5_u5305_28APP_29_u7684_u6D4B_u8BD5_u7528_u4F8B" class="headerlink" title="移动端安装包(APP)的测试用例"></a>移动端安装包(APP)的测试用例</h1><hr>
+<p>##安装</p>
+<ul>
+<li>安装手册是否规范，是否简洁，是否通俗易懂。</li>
+<li>安装手册是否齐全，正确，有改动时，文档是否同步更新</li>
+<li>直接复制安装程序到电脑上，能否正常安装</li>
+<li>按安装手册给出的步骤进行安装，安装是否正确</li>
+<li>查看在安装过程中存在的提示信息是否明确，意思是否明确</li>
+<li>在安装过程中，点击取消按钮，能否正常退出安装程序，软件是否可用。</li>
+<li>安装时是否识别有SD卡，并默认安装到sd卡中</li>
+<li>安装过程中，接听电话或者短信，安装是否成功</li>
+<li>安装程序是否自动检查系统的磁盘空间</li>
+<li>系统磁盘空间不足时，能否中止安装</li>
+<li>安装完毕后信息的显示和文件的安装是否正确，完整</li>
+<li>软件安装后是否能将相应的文件复制到系统文件夹下</li>
+<li>在软件安装过程中，出现突然断电的异常状态时，程序处理是否正常</li>
+<li>在软件安装过程中，出现突然断网的异常状态时，程序处理是否正常</li>
+<li>在不同的硬件环境下，能否正确，正常，完整的进行安装</li>
+<li>在不同的网络环境下(2G/3G/wifi)，能否正确，正常，完整的进行安装</li>
+<li>在低于所要求的硬件配置的情况下进行安装，能否正确，正常，完整的进行安装。</li>
+<li>在已经安装的情况下，所有信息与上次保存一致，覆盖安装能否再次安装</li>
+<li>在已经安装的情况下，安装路径不一致，覆盖安装能否再次安装</li>
+<li>在已经安装的情况下，卸载原软件，安装高版本，能否正确安装</li>
+<li>在已经安装的情况下，卸载原软件，安装低版本，能否正确安装</li>
+<li>在已经安装的情况下，不卸载原软件，直接安装高版本，能否正确安装</li>
+<li>在已经安装的情况下，不卸载原软件，直接安装低版本，能否正确安装</li>
+<li>安装完成后，能否正常启动应用程序</li>
+<li>安装完成后，重启手机能否正常启动应用程序</li>
+<li>安装完成后，是否对其他应用程序造成影响</li>
+<li>安装完成后，能否添加快捷方式</li>
+<li>安装完成后，杀毒软件是否会对其当做病毒处理。</li>
+<li>安装完成后，快捷方式是否指向安装目录</li>
+<li>多进程进行安装，是否安装成功</li>
+<li>安装过程中，手机内存不足的情况下，能否正常安装</li>
+</ul>
+<p>##卸载</p>
+<ul>
+<li>用自带的卸载程序进行正确卸载，能否卸载干净</li>
+<li>用第三方工具进行卸载，能否卸载干净</li>
+<li>在卸载过程中，关闭进程软件能否继续正常使用</li>
+<li>在卸载过程中，点击取消按钮，能否正常退出卸载程序，软件能否继续正常使用</li>
+<li>在卸载过程中，突然关闭移动设备电源，再次访问程序，程序能否正常运行</li>
+<li>在卸载过程中，突然重启设备，再次访问程序，程序能否正常运行</li>
+<li>未在使用程序时，直接删除安装目录下的文件，程序能否正常运行</li>
+<li>正在使用程序时，直接删除安装目录下的文件，程序能否正常运行</li>
+<li>在不同的系统下，进行卸载，能否正常卸载。</li>
+<li>在不同的硬件环境下，进行卸载，能否正常卸载。</li>
+<li>在不同的网络环境下，进行卸载，能否正常卸载。</li>
+<li>卸载成功后，是否对其他程序造成影响</li>
+<li>卸载后再次安装，一切功能是否正常</li>
+<li>卸载画面上的名称及版本信息是否正确</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/">test</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
