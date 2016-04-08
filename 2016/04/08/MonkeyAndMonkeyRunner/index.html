@@ -4,57 +4,24 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>git_tips | HaiSun</title>
+  <title>MonkeyAndMonkeyRunner | HaiSun</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="git常用命令总结
-初始化一个Git仓库：git init
-
-添加文件到Git仓库，分两步：（1）git add   (2)git commit -m “说明”
-
-查看文件 ：cat 
-
-查看当前仓库状态：git status
-
-查看修改内容：git diff 
-
-版本回退：git reset –hard HEAD^(或者具体版本号)
-
-查看版本库状态：git log –pretty=online">
+  <meta name="description" content="#一. Monkey与MonkeyRunner的不同点 #
+monkey运行在设备或模拟器上，可以脱离PC运行；monkeyRunner运行在PC上，需要通过服务器/客户端的模式向设备或模拟器上的Android应用发送指令来执行测试。
+普遍的做法是将monnkey作为一个向待测应用发送随机按键消息的测试工具，验证待测应用在这些随机事件的输入面前是否闪退或崩溃。而mmonkeyrunner则接受一个">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git_tips">
-<meta property="og:url" content="http://yoursite.com/2015/12/31/git-tips/index.html">
+<meta property="og:title" content="MonkeyAndMonkeyRunner">
+<meta property="og:url" content="http://yoursite.com/2016/04/08/MonkeyAndMonkeyRunner/index.html">
 <meta property="og:site_name" content="HaiSun">
-<meta property="og:description" content="git常用命令总结
-初始化一个Git仓库：git init
-
-添加文件到Git仓库，分两步：（1）git add   (2)git commit -m “说明”
-
-查看文件 ：cat 
-
-查看当前仓库状态：git status
-
-查看修改内容：git diff 
-
-版本回退：git reset –hard HEAD^(或者具体版本号)
-
-查看版本库状态：git log –pretty=online">
-<meta property="og:updated_time" content="2015-12-31T16:10:07.743Z">
+<meta property="og:description" content="#一. Monkey与MonkeyRunner的不同点 #
+monkey运行在设备或模拟器上，可以脱离PC运行；monkeyRunner运行在PC上，需要通过服务器/客户端的模式向设备或模拟器上的Android应用发送指令来执行测试。
+普遍的做法是将monnkey作为一个向待测应用发送随机按键消息的测试工具，验证待测应用在这些随机事件的输入面前是否闪退或崩溃。而mmonkeyrunner则接受一个">
+<meta property="og:updated_time" content="2016-04-08T06:01:37.463Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git_tips">
-<meta name="twitter:description" content="git常用命令总结
-初始化一个Git仓库：git init
-
-添加文件到Git仓库，分两步：（1）git add   (2)git commit -m “说明”
-
-查看文件 ：cat 
-
-查看当前仓库状态：git status
-
-查看修改内容：git diff 
-
-版本回退：git reset –hard HEAD^(或者具体版本号)
-
-查看版本库状态：git log –pretty=online">
+<meta name="twitter:title" content="MonkeyAndMonkeyRunner">
+<meta name="twitter:description" content="#一. Monkey与MonkeyRunner的不同点 #
+monkey运行在设备或模拟器上，可以脱离PC运行；monkeyRunner运行在PC上，需要通过服务器/客户端的模式向设备或模拟器上的Android应用发送指令来执行测试。
+普遍的做法是将monnkey作为一个向待测应用发送随机按键消息的测试工具，验证待测应用在这些随机事件的输入面前是否闪退或崩溃。而mmonkeyrunner则接受一个">
   
     <link rel="alternative" href="/atom.xml" title="HaiSun" type="application/atom+xml">
   
@@ -229,11 +196,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-git-tips" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-MonkeyAndMonkeyRunner" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/12/31/git-tips/" class="article-date">
-  	<time datetime="2015-12-31T15:06:59.000Z" itemprop="datePublished">2015-12-31</time>
+      <a href="/2016/04/08/MonkeyAndMonkeyRunner/" class="article-date">
+  	<time datetime="2016-04-08T02:18:05.000Z" itemprop="datePublished">2016-04-08</time>
 </a>
     </div>
   
@@ -246,7 +213,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      git_tips
+      MonkeyAndMonkeyRunner
     </h1>
   
 
@@ -254,6 +221,10 @@
       
       <div class="article-info article-info-post">
         
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/">test</a></li></ul>
+	</div>
+
         
 
         <div class="clearfix"></div>
@@ -262,59 +233,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="git_u5E38_u7528_u547D_u4EE4_u603B_u7ED3"><a href="#git_u5E38_u7528_u547D_u4EE4_u603B_u7ED3" class="headerlink" title="git常用命令总结"></a>git常用命令总结</h1><ol>
-<li><p>初始化一个Git仓库：git init</p>
-</li>
-<li><p>添加文件到Git仓库，分两步：（1）git add <file>  (2)git commit -m “说明”</file></p>
-</li>
-<li><p>查看文件 ：cat <file></file></p>
-</li>
-<li><p>查看当前仓库状态：git status</p>
-</li>
-<li><p>查看修改内容：git diff <file></file></p>
-</li>
-<li><p>版本回退：git reset –hard HEAD^(或者具体版本号)</p>
-</li>
-<li><p>查看版本库状态：git log –pretty=online</p>
-</li>
-<li><p>记录命令：git reflog</p>
-</li>
-<li><p>撤销工作区修改：git checkout – <file></file></p>
-</li>
-<li><p>删除文件： rm <file>，后面有两个选择，确定删除用git rm <file>并commit;取消删除用git checkout – <file></file></file></file></p>
-</li>
-<li><p>本地关联远程库：git remote add origin git@github.com:sunhai1992/relearngit.git</p>
-</li>
-<li><p>把本地库的所有内容推送到远程库：git push -u origin master</p>
-</li>
-<li><p>克隆远程库：git clone <name></name></p>
-</li>
-<li><p>创建分支：git checkout -b dev (相当于两条命令：git branch dev,git checkout dev)</p>
-</li>
-<li><p>合并分支：git merge <name></name></p>
-</li>
-<li><p>删除分支：git branch -d <name></name></p>
-</li>
-<li><p>查看分支合并图：git log –graph –pretty=online –abbrev-commit</p>
-</li>
-<li><p>强制禁用Fast forward模式：git merge –no-ff -m “merge with no-ff” dev</p>
-</li>
-<li><p>储存现场：git stash</p>
-</li>
-<li><p>回到工作现场：git stash pop</p>
-</li>
-<li><p>查看远程库信息：git remote -v</p>
-</li>
-<li><p>推送分支：git push origin dev</p>
-</li>
-<li><p>指定本地dev分支与远程origin/dev分支的链接：git branch –set-upstream dev orogin/dev</p>
-</li>
-<li><p>从远程抓取分支：git pull，如果有冲突，先处理冲突</p>
-</li>
-<li><p>在本地创建和远程分支对应的分支：git checkout -b branch_name origin/branch_name,分支名最好一致</p>
-<p>​</p>
-<p>​</p>
-</li>
+        <h2 id="23_u4E00-_Monkey_u4E0EMonkeyRunner_u7684_u4E0D_u540C_u70B9__23"><a href="#23_u4E00-_Monkey_u4E0EMonkeyRunner_u7684_u4E0D_u540C_u70B9__23" class="headerlink" title="#一. Monkey与MonkeyRunner的不同点 #"></a>#一. Monkey与MonkeyRunner的不同点 #</h2><ol>
+<li>monkey运行在设备或模拟器上，可以脱离PC运行；monkeyRunner运行在PC上，需要通过服务器/客户端的模式向设备或模拟器上的Android应用发送指令来执行测试。</li>
+<li>普遍的做法是将monnkey作为一个向待测应用发送随机按键消息的测试工具，验证待测应用在这些随机事件的输入面前是否闪退或崩溃。而mmonkeyrunner则接受一个明确的测试脚本（Python编写）。</li>
+<li>monkey不支持条件判断，也不支持读取待测界面的信息来执行验证操作,monkeyrunner 的测试脚本中有明确的条件判断语句，可以用来做功能测试。monkeyrunner允许在测试中通过坐标位置、控件ID和控件上的文字操作应用的界面元素。</li>
+</ol>
+<hr>
+<p>#二. MonkeyRunner用例#</p>
+<ol>
+<li>monkeyrunner脚本一般格式<br><em>#在程序中引入monkeyrunner模块</em><br>from com.android.monkeyrunner import<br><em>#连接正在运行的设备</em><br>MonkeyRunner,MonkeyDevice,MonkeyImage<br><em>#安装待测应用</em><br>device = MonkeyRunner.waitForConnection()<br>device.instalPackage(‘…/.apk’)<br>package = ‘’<br>activity = ‘’<br><em>#设置要启动的活动类名，由包名和活动类型全名组成</em><br>runComponent = package + ‘/‘ + activity<br><em>#启动活动组件</em><br>device.startActivity(component=runComponent)<br><em>#单击菜单按钮</em><br>device.press(‘KEYCODE_MENU’,MonkeyDevice.DOWN_AND_UP)<br><em>#给设备截图</em><br>result = device.takeSnapshot()<br><em>#保存截图</em><br>result.writeToFile(‘…/.png’,’png’)</li>
 </ol>
 
       
@@ -325,18 +252,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/01/28/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Hello World
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/12/31/log-test/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">log_test</div>
+    <a href="/2016/04/05/App-testCase/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">App_testCase</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -371,7 +289,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="git-tips" data-title="git_tips" data-url="http://yoursite.com/2015/12/31/git-tips/"></div>
+	<div class="ds-thread" data-thread-key="MonkeyAndMonkeyRunner" data-title="MonkeyAndMonkeyRunner" data-url="http://yoursite.com/2016/04/08/MonkeyAndMonkeyRunner/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

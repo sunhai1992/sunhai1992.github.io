@@ -115,7 +115,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/test/" style="font-size: 10px;">test</a> <a href="/tags/日志/" style="font-size: 10px;">日志</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+						<a href="/tags/test/" style="font-size: 20px;">test</a> <a href="/tags/日志/" style="font-size: 10px;">日志</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
 					</div>
 				</section>
 				
@@ -190,6 +190,72 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-MonkeyAndMonkeyRunner" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/08/MonkeyAndMonkeyRunner/" class="article-date">
+  	<time datetime="2016-04-08T02:18:05.000Z" itemprop="datePublished">2016-04-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/08/MonkeyAndMonkeyRunner/">MonkeyAndMonkeyRunner</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="23_u4E00-_Monkey_u4E0EMonkeyRunner_u7684_u4E0D_u540C_u70B9__23"><a href="#23_u4E00-_Monkey_u4E0EMonkeyRunner_u7684_u4E0D_u540C_u70B9__23" class="headerlink" title="#一. Monkey与MonkeyRunner的不同点 #"></a>#一. Monkey与MonkeyRunner的不同点 #</h2><ol>
+<li>monkey运行在设备或模拟器上，可以脱离PC运行；monkeyRunner运行在PC上，需要通过服务器/客户端的模式向设备或模拟器上的Android应用发送指令来执行测试。</li>
+<li>普遍的做法是将monnkey作为一个向待测应用发送随机按键消息的测试工具，验证待测应用在这些随机事件的输入面前是否闪退或崩溃。而mmonkeyrunner则接受一个明确的测试脚本（Python编写）。</li>
+<li>monkey不支持条件判断，也不支持读取待测界面的信息来执行验证操作,monkeyrunner 的测试脚本中有明确的条件判断语句，可以用来做功能测试。monkeyrunner允许在测试中通过坐标位置、控件ID和控件上的文字操作应用的界面元素。</li>
+</ol>
+<hr>
+<p>#二. MonkeyRunner用例#</p>
+<ol>
+<li>monkeyrunner脚本一般格式<br><em>#在程序中引入monkeyrunner模块</em><br>from com.android.monkeyrunner import<br><em>#连接正在运行的设备</em><br>MonkeyRunner,MonkeyDevice,MonkeyImage<br><em>#安装待测应用</em><br>device = MonkeyRunner.waitForConnection()<br>device.instalPackage(‘…/.apk’)<br>package = ‘’<br>activity = ‘’<br><em>#设置要启动的活动类名，由包名和活动类型全名组成</em><br>runComponent = package + ‘/‘ + activity<br><em>#启动活动组件</em><br>device.startActivity(component=runComponent)<br><em>#单击菜单按钮</em><br>device.press(‘KEYCODE_MENU’,MonkeyDevice.DOWN_AND_UP)<br><em>#给设备截图</em><br>result = device.takeSnapshot()<br><em>#保存截图</em><br>result.writeToFile(‘…/.png’,’png’)</li>
+</ol>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/">test</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-App-testCase" class="article article-type-post" itemscope itemprop="blogPost">
   
